@@ -1,0 +1,31 @@
+100 NGÀY ĂN XIN ONLINE — BẢN GỐC + TRANG QUẢN TRỊ
+=====================================================
+GIỮ NGUYÊN PHONG CÁCH: PASTEL + PIXEL ART + RETRO WINDOWS + MÈO HỒNG.
+
+1. Giải nén file ZIP.
+2. Đăng nhập github.com → tạo repo mới (Private) → Add file → Upload files
+   → kéo TẤT CẢ file bên trong thư mục vào (không tải .env có mật khẩu thật).
+3. Đăng nhập railway.com → New Project → Deploy from GitHub repo
+   → chọn đúng repo → Deploy.
+4. Trong Railway service → Variables → tạo ADMIN_TOKEN là mã ngẫu nhiên
+   dài từ 20 ký tự. Thêm Volume (ổ lưu dữ liệu) mount /data.
+5. Trong Railway service → Settings → Networking → Generate Domain.
+   Mở đường dẫn https://...up.railway.app để xem web công khai.
+6. Mở https://...up.railway.app/admin → nhập ADMIN_TOKEN
+   → cập nhật lời giới thiệu, mục tiêu, ngân hàng, ảnh → nhấn LƯU.
+7. Để số tiền tự nhảy khi người xem chuyển khoản: tạo webhook Có tiền vào
+   trên SePay, trỏ về https://...up.railway.app/api/webhooks/sepay,
+   dùng API Key và đặt trùng giá trị ở Railway → Variables → SEPAY_API_KEY.
+   Thử chuyển khoản nhỏ thật theo QR để xác minh.
+
+Trang của người xem: https://TEN-WEB/
+Trang của admin:    https://TEN-WEB/admin
+Overlay OBS:         https://TEN-WEB/overlay.html
+
+LƯU Ý:
+- Chỉ nhập ADMIN_TOKEN và SEPAY_API_KEY vào Railway Variables, không vào GitHub.
+- Chỉ khi webhook báo tiền thật mới tăng số tiền trên trang.
+- Nhớ tạo Volume mount /data trước khi nhận tiền hoặc tải ảnh.
+- Đây là dự án tặng cho cá nhân, không phải từ thiện.
+
+Hướng dẫn đầy đủ nằm trong README.md.

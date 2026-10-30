@@ -1,0 +1,13 @@
+{
+  "name": "100-ngay-an-xin-online-live",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Landing page Kawaii Pastel Retro + quan tri + VietQR + SePay",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file=.env server.js"
+  }
+}
